@@ -5,7 +5,7 @@ class ToDoTile extends StatelessWidget {
   final String taskName;
   final bool taskCompleted;
   Function(bool?)? onChanged;
-  // Function(BuildContext)? deleteFunction;
+  // VoidCallback deleteFunction;
 
   ToDoTile({
     super.key,
@@ -37,6 +37,11 @@ class ToDoTile extends StatelessWidget {
                 decoration: taskCompleted ? TextDecoration.lineThrough : TextDecoration.none,
               ),
             ),
+
+      //       IconButton(
+      //           onPressed: deleteFunction,
+      //           icon: Icon(Icons.delete, color: Colors.black,),
+      // )
           ],
         ),
         decoration: BoxDecoration(color: Colors.amber[100],
